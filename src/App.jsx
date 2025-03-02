@@ -1,4 +1,11 @@
 import "./App.css";
+import Ada from "./assets/images/Ada.jpeg";
+import Bitcoin from "./assets/images/bitcoin.png";
+import BNB from "./assets/images/BNB.png";
+import ETH from "./assets/images/ETH.png";
+import Sol from "./assets/images/sol.jpeg";
+import Ton from "./assets/images/Ton.jpeg";
+import Tron from "./assets/images/Tron.png";
 
 function App() {
   return (
@@ -13,77 +20,49 @@ function App() {
           <div className="cards-section">
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\bitcoin.png"
-                  width="30px"
-                  alt="bitcoin-image"
-                />
+                <img src={Bitcoin} width="30px" alt="bitcoin-image" />
                 <p>Bitcoin</p>
                 <p>14 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\ETH.png"
-                  width="30px"
-                  alt="Etherum-coin-image"
-                />
+                <img src={ETH} width="30px" alt="Etherum-coin-image" />
                 <p>Ethereum</p>
                 <p>10 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\sol.jpeg"
-                  max-width="30px"
-                  alt="solana-coin-image"
-                />
+                <img src={Sol} max-width="30px" alt="solana-coin-image" />
                 <p>solana</p>
                 <p>15 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\BNB.png"
-                  width="30px"
-                  alt="BNB-coin-image"
-                />
+                <img src={BNB} width="30px" alt="BNB-coin-image" />
                 <p>BNB</p>
                 <p>8 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\Tron.png"
-                  width="30px"
-                  alt="Tron-coin-image"
-                />
+                <img src={Tron} width="30px" alt="Tron-coin-image" />
                 <p>Tron</p>
                 <p>13 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\Ada.jpeg"
-                  width="30px"
-                  alt="Ada-coin-image"
-                />
+                <img src={Ada} width="30px" alt="Ada-coin-image" />
                 <p>Ada</p>
                 <p>17 coins</p>
               </div>
             </div>
             <div className="card">
               <div className="card-image">
-                <img
-                  src="src\assets\images\Ton.jpeg"
-                  width="30px"
-                  alt="Ton-coin-image"
-                />
+                <img src={Ton} width="30px" alt="Ton-coin-image" />
                 <p>Ton</p>
                 <p>20 coins</p>
               </div>
