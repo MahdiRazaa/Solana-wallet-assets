@@ -86,7 +86,7 @@ function App() {
             <tbody>
               <tr>
                 <td>
-                  <img src="src\assets\images\BNB.png" width="30" />
+                  <img src={BNB} width="30" />
                 </td>
                 <td>BNB</td>
                 <td>
@@ -97,7 +97,7 @@ function App() {
               </tr>
               <tr>
                 <td>
-                  <img src="src\assets\images\Ada.jpeg" width="30" />
+                  <img src={Ada} width="30" />
                 </td>
                 <td>Ada</td>
                 <td>
@@ -108,7 +108,7 @@ function App() {
               </tr>
               <tr>
                 <td>
-                  <img src="src\assets\images\bitcoin.png" width="30" />
+                  <img src={Bitcoin} width="30" />
                 </td>
                 <td>bitcoin</td>
                 <td>
@@ -119,9 +119,9 @@ function App() {
               </tr>
               <tr>
                 <td>
-                  <img src="src\assets\images\BNB.png" width="30" />
+                  <img src={ETH} width="30" />
                 </td>
-                <td>dogecoin</td>
+                <td>Ethreum</td>
                 <td>
                   <span className="span2">sell/4</span>
                 </td>
@@ -130,9 +130,9 @@ function App() {
               </tr>
               <tr>
                 <td>
-                  <img src="src\assets\images\ETH.png" width="30" />
+                  <img src={Tron} width="30" />
                 </td>
-                <td>Ethriem</td>
+                <td>Tron</td>
                 <td>
                   <span className="span1">Buy/5</span>
                 </td>
