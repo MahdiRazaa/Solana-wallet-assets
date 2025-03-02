@@ -1,0 +1,202 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-transform: capitalize;
+  font-family: 'Times New Roman',;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #f6f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding-top: 5vh;
+
+}
+
+.header-2 {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.sub-btn {
+  width: 100px;
+  height: 35px;
+  background-color: #2d336b;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  background-color: #a9b5dfba;
+  color: #2d336b;
+  outline: none;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border: 1.2px solid #2d336b;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.cards-section {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  background-color: #a9b5df;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-image {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.table-container {
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 85%;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: #a9b5df;
+  color: white;
+  font-size: 1rem;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.span1{
+  color: #20bca4;
+  font-weight: 700;
+}
+
+.span2{
+  color: #e1495e;
+  font-weight: 700;
+}
+
+
+/* Responsiveness Style*/
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .cards-section {
+    width: 100%;
+  }
+
+  .card {
+    width: 120px;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  .table-container {
+    padding-left: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    margin: 0%;
+    padding: 0%;
+    width: 100% ;
+    padding: 10px;
+  }
+
+  .header {
+    padding-top: 2vh;
+  }
+
+  .container {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .sub-btn {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .table-container {
+    padding-left: 10px;
+  }
+
+  table {
+    width: 80%;
+    font-size: 0.80rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+
