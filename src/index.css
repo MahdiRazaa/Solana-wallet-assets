@@ -1,8 +1,9 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   text-transform: capitalize;
-  font-family: 'Times New Roman',;
+  font-family: 'Times New Roman', serif;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -11,26 +12,27 @@
   background-color: #f6f0f0;
   border-radius: 10px;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .header {
   text-align: center;
   padding-top: 5vh;
-
 }
 
 .header-2 {
   width: 85%;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .sub-btn {
@@ -39,15 +41,13 @@
   background-color: #2d336b;
   color: white;
   border-radius: 10px;
-  outline: none;
-  margin-left: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .sub-btn:hover {
   background-color: #a9b5dfba;
   color: #2d336b;
-  outline: none;
 }
 
 input {
@@ -55,7 +55,6 @@ input {
   height: 30px;
   border: 1.2px solid #2d336b;
   border-radius: 10px;
-  outline: none;
   font-size: 1.2rem;
   padding-left: 10px;
 }
@@ -76,7 +75,6 @@ input {
   border-radius: 15px;
   text-align: center;
   padding: 10px;
-  box-sizing: border-box;
 }
 
 .card-image {
@@ -85,71 +83,94 @@ input {
   font-size: 1rem;
 }
 
+/* Table Layout */
 .table-container {
   width: 90%;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
 }
 
 table {
-  width: 85%;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
 }
 
 thead {
   background-color: #a9b5df;
   color: white;
-  font-size: 1rem;
 }
 
 th,
 td {
-  padding: 10px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
-.span1{
+.span1 {
   color: #20bca4;
   font-weight: 700;
 }
 
-.span2{
+.span2 {
   color: #e1495e;
   font-weight: 700;
 }
 
+/* ---------- RESPONSIVE STYLES ---------- */
 
-/* Responsiveness Style*/
 @media (max-width: 768px) {
   .container {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .sub-btn {
+    width: 90%;
   }
 
   .cards-section {
     width: 100%;
+    justify-content: center;
   }
 
   .card {
-    width: 120px;
+    width: 140px;
   }
 
-  input {
-    width: 70%;
-  }
-
-  .table-container {
-    padding-left: 20px;
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
   }
 
   table {
-    width: 100%;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .main-container {
-    margin: 0%;
-    padding: 0%;
-    width: 100% ;
     padding: 10px;
   }
 
@@ -158,26 +179,23 @@ td {
   }
 
   .container {
-    width: 100%;
-    display: inline-block;
     padding: 10px;
   }
 
   input {
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
   }
 
   .sub-btn {
-    width: 95%;
-    margin-left: 0;
+    width: 100%;
     margin-top: 10px;
   }
 
   .cards-section {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
+    align-items: center;
   }
 
   .card {
@@ -185,12 +203,11 @@ td {
   }
 
   .table-container {
-    padding-left: 10px;
+    padding: 10px;
   }
 
   table {
-    width: 80%;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
   th,
@@ -198,5 +215,3 @@ td {
     padding: 8px;
   }
 }
-
-
